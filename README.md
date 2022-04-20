@@ -1,4 +1,3 @@
-[WIP]
 ## DEMO
 
 ```
@@ -8,7 +7,7 @@ yarn start
 
 ## NOTE: 
 1. After making changes in the **Create React APP** to show case SDK config changes, always do a browser ***empty cache and hard reload***
-this hot reloading fix is WIP.
+, this hot reloading fix is WIP.
 
 2. There is no polling mechanism as of now, the Client APP has to re-load to get new notifications. [WIP]
 
