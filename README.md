@@ -12,7 +12,7 @@ after making changes in the **Create React APP** to show case SDK config changes
 this hot reloading fix is WIP.
 
 
-## Usage Guide when doing from scratch in an APP
+## Usage Guide when integrating `EmbedSDK` from scratch in an client dApp
 For using the `EmbedSDK` in your app, you can 
 
 USING AS AN NPM PACKAGE
