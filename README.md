@@ -40,8 +40,8 @@ or any component with the ID ***sdk-trigger-id*** or any ***ID*** but it has to 
         viewOptions: {
             type: 'sidebar', // optional [default: 'sidebar', 'modal']
             showUnreadIndicator: true, // optional
-		    unreadIndicatorColor: '#cc1919',
-			unreadIndicatorPosition: 'bottom-right',
+            unreadIndicatorColor: '#cc1919',
+            unreadIndicatorPosition: 'bottom-right',
         },
         theme: 'light',
       });
