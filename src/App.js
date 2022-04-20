@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useWeb3React } from "@web3-react/core";
-import EmbedSDK from "@dasubh/embedsdk";
+import { EmbedSDK } from "@epnsproject/frontend-sdk-staging";
 import EPNSBellIcon from './components/BellIcon';
 import ConnectButton from './components/connect';
 

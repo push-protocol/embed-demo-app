@@ -6,6 +6,12 @@ yarn install
 yarn start
 ```
 
+## NOTE: 
+after making changes in the **Create React APP** to show case SDK config changes, always do a browser ***empty cache and hard reload***
+
+this hot reloading fix is WIP.
+
+
 ## Usage Guide when doing from scratch in an APP
 For using the `EmbedSDK` in your app, you can 
 
@@ -74,7 +80,7 @@ or any component with the ID ***sdk-trigger-id*** or any ***ID*** but it has to 
 ***targetID*** passed to the `init()` (see below)
 
 After the wallet connect happens in your app flow trigger below code snippet.
- 
+
 **Note:** you have to have wallet connected and the account value to execute the below code because internally the SDK calls the EPNS get_feeds which needs the account address.
 
 ```
@@ -97,9 +103,3 @@ After the wallet connect happens in your app flow trigger below code snippet.
   }, []);
 ```
 
-
-
-## NOTE: 
-after making changes in the **Create React APP** to show case SDK config changes, always do a browser ***empty cache and hard reload***
-
-this hot reloading fix is WIP.
