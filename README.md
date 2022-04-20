@@ -73,7 +73,8 @@ Add in HTML/JSX the below HTML tag-
 or any component with the ID ***sdk-trigger-id*** or any ***ID*** but it has to be the same as that passed to the
 ***targetID*** passed to the `init()` (see below)
 
-After the wallet connect happens in your app flow trigger this. 
+After the wallet connect happens in your app flow trigger below code snippet.
+ 
 **Note:** you have to have wallet connected and the account value to execute the below code because internally the SDK calls the EPNS get_feeds which needs the account address.
 
 ```
