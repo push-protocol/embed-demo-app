@@ -12,7 +12,7 @@ yarn start
 2. There is no polling mechanism as of now, the Client APP has to re-load to get new notifications. [WIP]
 
 
-## Usage Guide when integrating `EmbedSDK` from scratch in an client dApp
+## Usage Guide when integrating `EmbedSDK` from scratch in a client dApp
 For using the `EmbedSDK` in your app, you can 
 
 USING AS AN NPM PACKAGE
