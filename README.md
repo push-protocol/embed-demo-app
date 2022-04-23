@@ -21,14 +21,12 @@ First
 
     yarn add @epnsproject/frontend-sdk-staging
 
-then
+then, In `App.js` of your App entry point
 
 
     import { EmbedSDK } from "@epnsproject/frontend-sdk-staging";
 
-then
 
-In `App.js` of your App entry point
 add in HTML/JSX the below HTML tag -
 
 
