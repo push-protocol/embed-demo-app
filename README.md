@@ -4,6 +4,8 @@
 yarn install
 yarn start
 ```
+1. click on the Button/icon on the page on top right - you will see a sidebar/modal with a close button
+2. click on the close button or the black overlay to close the sidebar/modal.
 
 ## NOTE: 
 1. After making changes in the **Create React APP** to show case SDK config changes, always do a browser ***empty cache and hard reload***
@@ -32,11 +34,13 @@ add in HTML/JSX the below HTML tag -
 
     <button id="sdk-trigger-id">trigger button</button>
 
-or any component with the ID ***sdk-trigger-id*** or any ***ID*** but it has to be the same as that passed to the
-***targetID*** passed to the `init()` (see below)
+or any component with the ID ***sdk-trigger-id*** 
 
-After the wallet connect happens in your app flow trigger this. 
-**Note:** you have to have wallet connected and the account value to execute the below code because internally the SDK calls the EPNS get_feeds which needs the account address.
+***Make sure the ID you give to the "button" is same as that of the targetID you pass to the init() below*** 
+
+After the wallet connect happens in your app flow trigger the below code snippet.
+
+**Note:** You have to have the wallet connected with an account to execute the below code because internally the SDK calls the EPNS `get_feeds()` API which needs the account address. You will see notifications if you have opted-in to a channel using [EPNS](https://staging-app.epns.io/)
 
 ```
   useEffect(() => {
