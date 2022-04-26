@@ -1232,10 +1232,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@epnsproject/frontend-sdk-staging@^1.7.4":
-  version "1.7.4"
-  resolved "https://registry.yarnpkg.com/@epnsproject/frontend-sdk-staging/-/frontend-sdk-staging-1.7.4.tgz#e0f47ada38c2090ebb6e2cd7762e475ba341333e"
-  integrity sha512-FJKrpMUNBx8Ay+4u1xwtWzI5EQcQxStzNWcq9d+4s17Y5/YyuTUXUrAOAHpYgZ2LVhvC5BaK21BRsNXgI9jUtA==
+"@epnsproject/frontend-sdk-staging@^1.7.7":
+  version "1.7.7"
+  resolved "https://registry.yarnpkg.com/@epnsproject/frontend-sdk-staging/-/frontend-sdk-staging-1.7.7.tgz#ad4796a4882c5720e9e355980aed3a62fe0eb41d"
+  integrity sha512-UUXT2TIlOk+yvovODgln773C0fp/8XkYeZTXkBOVsYgDkg2LBvGfwZTi25WgCV3YXouLthZKM/iTu0TO/CPbmw==
   dependencies:
     "@rollup/plugin-commonjs" "^20.0.0"
     ansi-regex "^2.1.1"

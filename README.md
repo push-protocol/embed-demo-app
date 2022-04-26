@@ -8,10 +8,7 @@ yarn start
 2. click on the close button or the black overlay to close the sidebar/modal.
 
 ## NOTE: 
-1. After making changes in the **Create React APP** to show case SDK config changes, always do a browser ***empty cache and hard reload***
-, this hot reloading fix is WIP.
-
-2. There is no polling mechanism as of now, the Client APP has to re-load to get new notifications. [WIP]
+There is no polling mechanism as of now, the Client APP has to re-load to get new notifications. [WIP]
 
 
 ## Usage Guide when integrating `EmbedSDK` from scratch in a client dApp
@@ -57,7 +54,17 @@ After the wallet connect happens in your app flow trigger the below code snippet
             unreadIndicatorPosition: 'bottom-right',
         },
         theme: 'light',
+        onOpen: () => {
+          console.log('-> client dApp onOpen callback');
+        },
+        onClose: () => {
+          console.log('-> client dApp onClose callback');
+        }
       });
     }
+
+    return () => {
+      EmbedSDK.cleanup();
+    };
   }, []);
 ```

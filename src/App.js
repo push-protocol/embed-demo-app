@@ -21,20 +21,30 @@ function App() {
   useEffect(() => {
     if (active && account) {
       /* TRIGGER THE CODE if THE USER HAS CONNECTED THEIR WALLET */
-      EmbedSDK.init({
-        headerText: 'EPNS Notifications',
-        targetID: 'sdk-trigger-id',
-        appName: 'consumerApp',
-        user: '0xD8634C39BBFd4033c0d3289C4515275102423681',
-        viewOptions: {
-          // type: 'modal',
-          showUnreadIndicator: true,
-			    unreadIndicatorColor: '#cc1919',
-			    unreadIndicatorPosition: 'top-right',
-        },
-        theme: 'light',
-      });
-    }
+        EmbedSDK.init({
+          headerText: 'EPNS Notifications heyo',
+          targetID: 'sdk-trigger-id',
+          appName: 'consumerApp',
+          user: account,
+          viewOptions: {
+            // type: 'modal',
+            showUnreadIndicator: true,
+            unreadIndicatorColor: '#cc1919',
+            unreadIndicatorPosition: 'top-right',
+          },
+          theme: 'light',
+          onOpen: () => {
+            console.log("on open callback called");
+          },
+          onClose: () => {
+            console.log("on close callback called");
+          }
+        });
+      }
+
+      return () => {
+        EmbedSDK.cleanup();
+      };
   }, [active, account]);
 
 
